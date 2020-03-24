@@ -1,14 +1,18 @@
 <!doctype html>
 <html>
+
 <head>
-<meta charset="UTF-8">
-<title>Untitled Document</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-	div {border:1px solid red;}
+    <meta charset="UTF-8">
+    <title>Untitled Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--    <link rel="stylesheet" href="icon.css">-->
+    <style>
+        div {
+            border: 1px solid red;
+        }
 
 
-/*
+        /*
 	#logo {
 		width:250px;
 		float:left;
@@ -40,206 +44,346 @@
 	}
 */
 
-	a{
-		text-decoration: none;
-		color: black;
-	}
+        a {
+            text-decoration: none;
+            color: black;
+        }
 
-	#banner {
-		clear:both;
-		height:300px;
-		background-image: url("images/nyc.jpg");
-		background-size:cover;
-		background-position: center;
-		background-repeat: no-repeat;
-	}
+        #banner {
+            clear: both;
+            height: 300px;
+            background-image: url("images/nyc.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
 
-	#footer {
-		clear: both;
-	}
+        #footer {
+            clear: both;
+        }
 
-/*-------------------desktop-------------------*/
-@media (min-width: 1261px){
-
-
-
-	#myLinks ul{
-		display: inline-flex;
-		justify-content: flex-end;
-		list-style-type: none;
-		color: black;
-		float: right;
-	}
-
-	#myLinks li{
-		margin-right: 60px;
-	}
+        /*-------------------desktop-------------------*/
+        @media (min-width: 1261px) {
 
 
-	#header {
-		width:15%;
-		float:left;
-	}
-	#content {
-		width:43%;
-		float:left;
-	}
-	#aside {
-		width:400px;
-		float:right;
-		background-color: #ccc;
-	}
 
-}
+            #myLinks ul {
+                display: inline-flex;
+                justify-content: flex-end;
+                list-style-type: none;
+                color: black;
+                float: right;
+            }
 
-/*-------------------tablet-------------------*/
-@media (min-width: 641px) and (max-width: 1260px){
+            #myLinks li {
+                margin-right: 60px;
+            }
 
 
-	#myLinks ul{
-		display: inline-flex;
-		justify-content: flex-end;
-		list-style-type: none;
-		color: black;
-		float: right;
-	}
+            #header {
+                width: 15%;
+                float: left;
+            }
 
-	#myLinks li{
-		margin-right: 60px;
-	}
+            #content {
+                width: 43%;
+                float: left;
+            }
 
-	a{
-		text-decoration: none;
-		color: black;
-	}
+            #aside {
+                width: 400px;
+                float: right;
+                background-color: #ccc;
+            }
 
-	#header {
-		width:20%;
-		float:left;
-	}
-	#content {
-		width:33%;
-		float:left;
-	}
-	#aside {
-		width:44%;
-		float:right;
-		background-color: #ccc;
-	}
-	#aside img {
-		width:100%;
-		height:inherit;
-	}
-}
+        }
 
-/*-------------------mobile-------------------*/
+        /*-------------------tablet-------------------*/
+        @media (min-width: 641px) and (max-width: 1260px) {
 
 
-@media (max-width: 640px){
+            #myLinks ul {
+                display: inline-flex;
+                justify-content: flex-end;
+                list-style-type: none;
+                color: black;
+                float: right;
+            }
 
-	ul{
-		text-align: center;
-		list-style-type: none;
-	}
+            #myLinks li {
+                margin-right: 60px;
+            }
 
+            a {
+                text-decoration: none;
+                color: black;
+            }
 
-.topnav {
-  overflow: hidden;
-  position: relative;
-}
+            #header {
+                width: 20%;
+                float: left;
+            }
 
-.topnav #myLinks {
-  display: none;
-}
+            #content {
+                width: 33%;
+                float: left;
+            }
 
-.topnav a {
-  color: black;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-  display: block;
-}
+            #aside {
+                width: 44%;
+                float: right;
+                background-color: #ccc;
+            }
 
-.topnav a.icon {
-  background: black;
-  display: block;
-  position: absolute;
-  right: 0;
-  top: 0;
-}
+            #aside img {
+                width: 100%;
+                height: inherit;
+            }
+        }
 
-.topnav a:hover {
-  color: black;
-}
-
-.active {
-  color: white;
-}
-
-}
+        /*-------------------mobile-------------------*/
 
 
-</style>
+        @media (max-width: 640px) {
+
+            ul {
+                text-align: center;
+                list-style-type: none;
+            }
+
+
+            .topnav {
+                overflow: hidden;
+                position: relative;
+            }
+
+            .topnav #myLinks {
+                display: none;
+            }
+
+            .topnav a {
+                color: black;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;
+                display: block;
+            }
+
+            /*
+            .topnav a.icon {
+                background: black;
+                display: block;
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+*/
+
+            .topnav a:hover {
+                color: black;
+            }
+
+            .active {
+                color: white;
+            }
+
+
+            #nav-icon3 {
+                width: 60px;
+                height: 45px;
+                position: relative;
+                margin: 50px auto;
+                -webkit-transform: rotate(0deg);
+                -moz-transform: rotate(0deg);
+                -o-transform: rotate(0deg);
+                transform: rotate(0deg);
+                -webkit-transition: .5s ease-in-out;
+                -moz-transition: .5s ease-in-out;
+                -o-transition: .5s ease-in-out;
+                transition: .5s ease-in-out;
+                cursor: pointer;
+            }
+
+            #nav-icon3 span {
+                display: block;
+                position: absolute;
+                height: 9px;
+                width: 100%;
+                background: #d3531a;
+                border-radius: 9px;
+                opacity: 1;
+                left: 0;
+                -webkit-transform: rotate(0deg);
+                -moz-transform: rotate(0deg);
+                -o-transform: rotate(0deg);
+                transform: rotate(0deg);
+                -webkit-transition: .25s ease-in-out;
+                -moz-transition: .25s ease-in-out;
+                -o-transition: .25s ease-in-out;
+                transition: .25s ease-in-out;
+            }
+
+            #nav-icon3 span:nth-child(1) {
+                top: 0px;
+            }
+
+            #nav-icon3 span:nth-child(2),
+            #nav-icon3 span:nth-child(3) {
+                top: 18px;
+            }
+
+            #nav-icon3 span:nth-child(4) {
+                top: 36px;
+            }
+
+            #nav-icon3.open span:nth-child(1) {
+                top: 18px;
+                width: 0%;
+                left: 50%;
+            }
+
+            #nav-icon3.open span:nth-child(2) {
+                -webkit-transform: rotate(45deg);
+                -moz-transform: rotate(45deg);
+                -o-transform: rotate(45deg);
+                transform: rotate(45deg);
+            }
+
+            #nav-icon3.open span:nth-child(3) {
+                -webkit-transform: rotate(-45deg);
+                -moz-transform: rotate(-45deg);
+                -o-transform: rotate(-45deg);
+                transform: rotate(-45deg);
+            }
+
+            #nav-icon3.open span:nth-child(4) {
+                top: 18px;
+                width: 0%;
+                left: 50%;
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        }
+
+    </style>
 </head>
 
 <body>
-<div id="wrapper">
-    <div class="nudge">
-      <div id="logo">
-        <h1>New York City</h1>
-        <h3>Tourist</h3>
+    <div id="wrapper">
+        <div class="nudge">
+            <div id="logo">
+                <h1>New York City</h1>
+                <h3>Tourist</h3>
+            </div>
+
+
+            <div class="topnav">
+                <a href="#home" class="active"></a>
+
+                <a href="javascript:void(0);" class="icon" id="nav-icon3" onclick="myFunction()">
+
+
+
+                    <div id="nav-icon3">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+
+                </a>
+
+
+                <div id="myLinks">
+                    <ul>
+                        <li><a class="active" href="#home">Home</a></li>
+                        <li><a href="#news">News</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#about">About</a></li>
+                    </ul>
+                </div>
+
+
+            </div>
+
+
         </div>
 
+        <div id="banner">big picture goes here</div>
+        <div class="nudge">
+            <div id="header">
+                <h2>The City</h2>
+            </div>
+            <div id="content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ornare nisl in vestibulum accumsan. Suspendisse ligula libero, hendrerit sit amet ex a, porta gravida lectus. Integer vehicula lectus erat, ac fermentum nisi consequat mattis. Proin bibendum ullamcorper nibh. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent sodales dolor eget leo egestas bibendum. Cras nec condimentum lacus, vitae pharetra odio. Morbi et neque vel felis pharetra interdum. Maecenas bibendum scelerisque orci, a egestas lectus porttitor rhoncus. Integer sodales urna id massa commodo dapibus. Ut dictum eleifend diam, vitae suscipit ex. Sed sem velit, tristique at fermentum eget, scelerisque vitae sem. Proin imperdiet tincidunt est sit amet hendrerit. Mauris non erat ac mi hendrerit finibus sit amet quis urna. Donec lacinia urna ac dolor fringilla aliquet.</p>
+                <p>In dui felis, tincidunt eget hendrerit a, laoreet vitae orci. Quisque pretium, diam eget facilisis viverra, dolor libero volutpat eros, vel dapibus metus quam at justo. Phasellus tincidunt ex ex, pharetra rutrum mi auctor ut. Nulla non mi laoreet, fermentum nulla id, tincidunt libero. Proin placerat lacus sagittis, hendrerit elit non, imperdiet enim. Phasellus ac diam lacinia, pharetra lacus ac, tempor magna. Vivamus ac lectus egestas tellus tempus tristique eu vitae dui. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis erat metus, tempor nec diam efficitur, euismod rhoncus libero. Praesent eget sapien ac nibh dapibus varius ac in nisl. Donec quis purus vel nisi fringilla aliquam. Suspendisse vestibulum porttitor mi ac sodales. Morbi ac hendrerit sem, in rutrum justo. Pellentesque convallis consectetur finibus.</p>
+            </div>
+            <div id="aside">
+                <img src="images/30rock.jpg" width="400" height="400" alt="Image of statue" />
+                <p class="caption">aside content goes here</p>
+            </div>
+        </div>
 
-		<div class="topnav">
-  <a href="#home" class="active"></a>
-
-  <div id="myLinks">
-	  <ul>
-	<li><a class="active" href="#home">Home</a></li>
-    <li><a href="#news">News</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#about">About</a></li>
-		  </ul>
-  </div>
-
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i>
-  </a>
-</div>
-
-
+        <div id="footer">&copy;2020 New York City Tourist</div>
     </div>
 
-	<div id="banner">big picture goes here</div>
-    <div class="nudge">
-      <div id="header">
-        <h2>The City</h2>
-      </div>
-      <div id="content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ornare nisl in vestibulum accumsan. Suspendisse ligula libero, hendrerit sit amet ex a, porta gravida lectus. Integer vehicula lectus erat, ac fermentum nisi consequat mattis. Proin bibendum ullamcorper nibh. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent sodales dolor eget leo egestas bibendum. Cras nec condimentum lacus, vitae pharetra odio. Morbi et neque vel felis pharetra interdum. Maecenas bibendum scelerisque orci, a egestas lectus porttitor rhoncus. Integer sodales urna id massa commodo dapibus. Ut dictum eleifend diam, vitae suscipit ex. Sed sem velit, tristique at fermentum eget, scelerisque vitae sem. Proin imperdiet tincidunt est sit amet hendrerit. Mauris non erat ac mi hendrerit finibus sit amet quis urna. Donec lacinia urna ac dolor fringilla aliquet.</p>
-        <p>In dui felis, tincidunt eget hendrerit a, laoreet vitae orci. Quisque pretium, diam eget facilisis viverra, dolor libero volutpat eros, vel dapibus metus quam at justo. Phasellus tincidunt ex ex, pharetra rutrum mi auctor ut. Nulla non mi laoreet, fermentum nulla id, tincidunt libero. Proin placerat lacus sagittis, hendrerit elit non, imperdiet enim. Phasellus ac diam lacinia, pharetra lacus ac, tempor magna. Vivamus ac lectus egestas tellus tempus tristique eu vitae dui. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis erat metus, tempor nec diam efficitur, euismod rhoncus libero. Praesent eget sapien ac nibh dapibus varius ac in nisl. Donec quis purus vel nisi fringilla aliquam. Suspendisse vestibulum porttitor mi ac sodales. Morbi ac hendrerit sem, in rutrum justo. Pellentesque convallis consectetur finibus.</p>
-        </div>
-      <div id="aside">
-        <img src="images/30rock.jpg" width="400" height="400" alt="Image of statue"/>
-        <p class="caption">aside content goes here</p>
-        </div>
-    </div>
 
-	<div id="footer">&copy;2020 New York City Tourist</div>
-</div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="script.js"></script>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+
+    </script>
 
 
 
-	<script>
-function myFunction() {
-  var x = document.getElementById("myLinks");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
-}
-</script>
+
+
+
+
+
+
 </body>
+
 </html>
